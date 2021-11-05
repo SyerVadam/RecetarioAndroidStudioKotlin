@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioIngrediente">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="63dp" />
+
+        <EditText
+            android:id="@+id/etNombreIngrediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etCantidadIngrediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="numberDecimal" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="37dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Seleccione la unidad de medida"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbUnidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unidades (u)" />
+
+            <RadioButton
+                android:id="@+id/rbGramos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gramos (gr)" />
+
+            <RadioButton
+                android:id="@+id/rbMililitros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mililitros (ml)" />
+
+            <RadioButton
+                android:id="@+id/rbOnzas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Onzas (oz)" />
+
+            <RadioButton
+                android:id="@+id/rbLibras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Libras (lb)" />
+
+            <RadioButton
+                android:id="@+id/rbPulgadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulgadas (inch)" />
+
+            <RadioButton
+                android:id="@+id/rbTazas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tazas (cup)" />
+
+            <RadioButton
+                android:id="@+id/rbPintas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pintas (pint)" />
+
+            <RadioButton
+                android:id="@+id/rbCucharadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cucharadas  (tsp)" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAgregarIngredienteFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar ingrediente" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/israz/AndroidStudioProjects/Recetario/app/src/main/res/layout/activity_categorias.xml" value="0.25" />
+        <entry key="..\:/Users/israz/AndroidStudioProjects/Recetario/app/src/main/res/layout/activity_formulario_ingrediente.xml" value="0.26811594202898553" />
+        <entry key="..\:/Users/israz/AndroidStudioProjects/Recetario/app/src/main/res/layout/activity_formulario_receta.xml" value="0.25" />
+        <entry key="..\:/Users/israz/AndroidStudioProjects/Recetario/app/src/main/res/layout/activity_lista_recetas.xml" value="0.25" />
+        <entry key="..\:/Users/israz/AndroidStudioProjects/Recetario/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/israz/AndroidStudioProjects/Recetario/app/src/main/res/layout/activity_muestra_receta.xml" value="0.27291666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

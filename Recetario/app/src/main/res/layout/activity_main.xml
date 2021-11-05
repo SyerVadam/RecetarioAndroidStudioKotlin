@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".Recetario">
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:id="@+id/btnRecetas"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="386dp"
+            android:text="Recetas"
+            app:layout_constraintBottom_toTopOf="@+id/btnInfo"
+            app:layout_constraintEnd_toStartOf="@+id/btnCategorias"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCategorias"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="386dp"
+            android:text="Categorias"
+            app:layout_constraintBottom_toTopOf="@+id/btnInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnRecetas"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="223dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="501dp"
+            android:layout_marginBottom="167dp"
+            android:text="Info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout6" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="452dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="36dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/_5747" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

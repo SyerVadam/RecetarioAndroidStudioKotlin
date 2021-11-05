@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaRecetas">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="398dp"
+        android:layout_height="671dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegresarRecetas"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ListView
+            android:id="@+id/lvRecetas"
+            android:layout_width="match_parent"
+            android:layout_height="433dp"
+            android:choiceMode="singleChoice"
+            android:focusableInTouchMode="true" />
+
+        <Button
+            android:id="@+id/btnAñadirReceta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AÑADIR" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btnConsultarReceta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar" />
+
+        <Button
+            android:id="@+id/btnActualizarReceta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnEliminarReceta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ELIMINAR"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="Recetas"
+        android:textColor="#6F20DD"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/btnRegresarRecetas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnRegresarRecetas"
+        android:layout_width="99dp"
+        android:layout_height="45dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnVerCategorias"
+        android:layout_width="139dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="Ver Categorías"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
